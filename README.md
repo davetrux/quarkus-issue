@@ -22,12 +22,12 @@ OpenJDK 64-Bit Server VM GraalVM CE 22.0.2+9.1 (build 22.0.2+9-jvmci-b01, mixed 
 
 ## Java Dev Build
 
-The CLIENT_ID and TENANT_ID are actually UUIDs from Azure.
+The TENANT_ID is actually a UUID from Azure.
 
-CLIENT_ID=54321 TENANT_ID=12345 ./gradlew quarkusDev
+TENANT_ID=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx ./gradlew quarkusDev
 
 ## Native build
 
 ./gradlew clean build -x test -Dquarkus.native.enabled=true -Dquarkus.package.jar.enabled=false
 
-CLIENT_ID=54321 TENANT_ID=212345 ./build/implicit-issue-1.0.0-SNAPSHOT-runner
+TENANT_ID=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx ./build/implicit-issue-1.0.0-SNAPSHOT-runner
